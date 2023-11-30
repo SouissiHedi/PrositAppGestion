@@ -2,11 +2,11 @@ import java.sql.SQLOutput;
 
 public class Main {
     public static void main(String[] args) {
-        Employe e = new Employe(8,"Souissi","Hedi","info",2);
-        Employe e2 = new Employe(7,"Chamam","Youssef","info",3);
-        Employe e3 = new Employe(8,"Souissi","Hedi","info",3);
-        Employe e4 = new Employe(0,"Gam","Dhia","business",0);
-        SocieteArrayList L= new SocieteArrayList();
+        Employe e = new Employe(8, "Souissi", "Hedi", "info", 2);
+        Employe e2 = new Employe(7, "Chamam", "Youssef", "info", 3);
+        Employe e3 = new Employe(8, "Souissi", "Hedi", "info", 3);
+        Employe e4 = new Employe(0, "Gam", "Dhia", "business", 0);
+        SocieteArrayList L = new SocieteArrayList();
         System.out.println(e);
         System.out.println(e2);
         System.out.println(e3);
@@ -29,6 +29,7 @@ public class Main {
         L.trierEmployeParNomDépartementEtGrade();
         L.displayEmploye();
 
-
     }
+
+
 }

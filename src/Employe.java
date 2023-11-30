@@ -1,4 +1,4 @@
-public class Employe {
+public class Employe implements Comparable<Employe> {
     private int id;
     private String nom;
     private String prenom;
@@ -72,5 +72,14 @@ public class Employe {
                 "Prenom : " + prenom + "  ||  " +
                 "Nom de Département : " + nomDepartement + "  ||  " +
                 "Grade : " + grade + "\n";
+    }
+
+    @Override
+    public int hashCode(){
+        return 33*id*nom.hashCode()+prenom.hashCode()*2-10;
+    }
+
+    public int compareTo(Employe o){
+        return this.id - o.getId();
     }
 }
